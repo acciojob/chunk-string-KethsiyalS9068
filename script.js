@@ -1,5 +1,16 @@
 function stringChop(str, size) {
-  // your code here
+  // your code herefunction stringChop(str, size) {
+    if (str == null) return [];
+
+    let result = [];
+
+    for (let i = 0; i < str.length; i += Number(size)) {
+        result.push(str.slice(i, i + Number(size)));
+    }
+
+    return result;
+}
+	
 }
 
 // Do not change the code below
